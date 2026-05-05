@@ -2,7 +2,6 @@ package com.tw.step.rover.rover;
 
 import com.tw.step.rover.boundary.Boundary;
 import com.tw.step.rover.position.Coordinate;
-import com.tw.step.rover.position.Direction;
 import com.tw.step.rover.position.Navigator;
 
 public class LiveRoverState implements RoverState {
@@ -28,7 +27,7 @@ public class LiveRoverState implements RoverState {
     public RoverState move(Navigator navigator, Boundary boundary) {
         Coordinate nextCoordinate = rover.getNextCoordinateInternal(navigator);
 
-        if (!boundary.isWithin(nextCoordinate)) {
+        if (!boundary.contains(nextCoordinate)) {
             return new DeadRoverState(rover);
         }
 
@@ -37,4 +36,8 @@ public class LiveRoverState implements RoverState {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "ACTIVE";
+    }
 }

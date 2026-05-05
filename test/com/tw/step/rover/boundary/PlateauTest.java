@@ -11,7 +11,7 @@ class PlateauTest {
     void shouldAllowCoordinateWithinInclusiveBounds() {
         Plateau plateau = new Plateau(new Coordinate(0, 0), new Coordinate(2, 2));
 
-        assertTrue(plateau.isWithin(new Coordinate(2, 2)));
-        assertFalse(plateau.isWithin(new Coordinate(3, 2)));
+        assertTrue(plateau.contains(new Coordinate(2, 2)));
+        assertFalse(plateau.contains(new Coordinate(3, 2)));
     }
 }

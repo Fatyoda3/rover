@@ -10,6 +10,6 @@ class InfinitePlateauTest {
     void shouldAllowAnyCoordinate() {
         InfinitePlateau plateau = new InfinitePlateau();
 
-        assertTrue(plateau.isWithin(new Coordinate(-10, 25)));
+        assertTrue(plateau.contains(new Coordinate(-10, 25)));
     }
 }

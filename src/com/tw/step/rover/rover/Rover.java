@@ -51,11 +51,11 @@ public class Rover {
     }
 
     boolean isWithin(Boundary boundary) {
-        return boundary.isWithin(this.coordinate);
+        return boundary.contains(this.coordinate);
     }
 
     @Override
     public String toString() {
-        return coordinate.toString() + " " + heading.toString();
+        return coordinate.toString() + " " + heading.toString() + " " + roverState.toString();
     }
 }

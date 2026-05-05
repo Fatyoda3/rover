@@ -12,7 +12,7 @@ public class Plateau implements Boundary {
     }
 
     @Override
-    public boolean isWithin(Coordinate coord) {
+    public boolean contains(Coordinate coord) {
         return coord.isWithin(bottomLeft,topRight);
     }
     public boolean isWithinNextPosition(Coordinate coord ) {

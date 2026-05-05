@@ -27,6 +27,6 @@ public class DeadRoverState implements RoverState {
 
     @Override
     public String toString() {
-        return "Dead";
+        return "LOST";
     }
 }
