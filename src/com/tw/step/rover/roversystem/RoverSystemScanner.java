@@ -24,6 +24,7 @@ public class RoverSystemScanner {
 
     public String consume() {
         String token = this.peek();
+
         if(this.currentIndex < this.tokens.length) {
             this.currentIndex++;
         }

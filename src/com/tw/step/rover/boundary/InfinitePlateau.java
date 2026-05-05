@@ -7,4 +7,7 @@ public class InfinitePlateau implements Boundary {
     public boolean contains(Coordinate coord) {
         return true;
     }
+    public Boundary createPlateau(Coordinate bottomLeft, Coordinate topRight){
+        return this;
+    }
 }

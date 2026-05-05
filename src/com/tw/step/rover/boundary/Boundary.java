@@ -4,4 +4,5 @@ import com.tw.step.rover.position.Coordinate;
 
 public interface Boundary {
     boolean contains(Coordinate coord);
+    public Boundary createPlateau(Coordinate bottomLeft, Coordinate topRight);
 }
