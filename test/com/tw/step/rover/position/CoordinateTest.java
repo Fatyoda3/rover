@@ -10,7 +10,7 @@ class CoordinateTest {
         Coordinate coordinate = new Coordinate(0, 0);
         Coordinate offset = new Coordinate(1, 2);
         Coordinate newCoordinate = coordinate.add(offset);
-        assertEquals(new Coordinate(1,2), newCoordinate);
+        assertEquals(new Coordinate(1, 2), newCoordinate);
     }
 
     @Test
