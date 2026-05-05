@@ -32,6 +32,7 @@ public class Coordinate {
         return bottomLeft.x <= this.x && this.x <= topRight.x && bottomLeft.y <= this.y && this.y <= topRight.y;
     }
 
+
     public Coordinate add(Coordinate other) {
         return new Coordinate(this.x + other.x, this.y + other.y);
     }

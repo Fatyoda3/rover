@@ -15,4 +15,7 @@ public class Plateau implements Boundary {
     public boolean isWithin(Coordinate coord) {
         return coord.isWithin(bottomLeft,topRight);
     }
+    public boolean isWithinNextPosition(Coordinate coord ) {
+        return coord.isWithin(bottomLeft,topRight);
+    }
 }
